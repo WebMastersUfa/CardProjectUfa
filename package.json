@@ -1,0 +1,34 @@
+{
+  "name": "card_project_ufa",
+  "version": "1.0.0",
+  "description": "Build project\r npm i",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-masters-ufa/card_project_ufa.git"
+  },
+  "author": "UwetU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-masters-ufa/card_project_ufa/issues"
+  },
+  "homepage": "https://github.com/web-masters-ufa/card_project_ufa#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.4.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
