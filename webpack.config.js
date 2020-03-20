@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -29,6 +30,36 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin(
       { filename: 'style.css' }
-    )
+    ),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/contacts.html',
+      filename: './pages/contacts.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/personalization.html',
+      filename: './pages/personalization.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/portfolio.html',
+      filename: './pages/portfolio.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/requirements.html',
+      filename: './pages/requirements.html'
+    })
   ]
 };
