@@ -31,7 +31,8 @@
             overflow: hidden;
             transition: all 0.4s;
             .list--item {
-                margin-left: 8px;
+                list-style: none;
+                margin-left: 16px;
                 a{
                     display: inline-block;
                     text-decoration: none;
@@ -51,8 +52,7 @@
             } 
         }
         &--logo{
-            margin-left: 8px;
-            border-radius: 16px;
+            margin-left: 16px;
         }
         &--header{
             font-size: 1.6rem;
@@ -61,7 +61,7 @@
         .burger{
             display: inline-block;
             cursor: pointer;
-            margin-right: 8px;
+            margin-right: 16px;
             &--item-one, &--item-two, &--item-three{
                 width: 18px;
                 height: 2px;
@@ -86,7 +86,7 @@
     }
     .main-content{
         height: 100vh;
-        padding: 8px;
+        padding: 16px;
     }
     .footer{
         display: flex;
@@ -95,7 +95,7 @@
         color: white;
         align-items: center;
         justify-content: flex-end;
-        padding-right: 8px;
+        padding-right: 16px;
         img:nth-child(2){
             margin: 0 8px;
         }
