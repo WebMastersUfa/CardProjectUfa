@@ -5,99 +5,99 @@
 @import './variables.scss';
 
 *{
-    margin: 0;
-    padding: 0;
-    font-family: $headings-font-family;
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: $headings-font-family;
+  font-size: 14px;
 }
 
 .wrapper{
+  width: 100%;
+  .navbar{
+    display: flex;
     width: 100%;
-    .navbar{
-        display: flex;
-        width: 100%;
-        height: 50px;
-        background-color: $primary;
-        align-items: center;
-        justify-content: space-between;
-        color: $white;
-        &--list{
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 0;
-            top: 50px;
-            background-color: $primary;
-            overflow: hidden;
-            transition: all 0.4s;
-            .list--item {
-                list-style: none;
-                margin-left: 16px;
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    color: $white;
-                    font-size: 1.6rem;
-                }
-                .active{
-                    color: $black;
-                }
-            }
-            .list--item:nth-child(1){
-                margin-top: 16px;
-            }
-            .list--item:nth-child(n+2):nth-child(-n+4){
-                margin-top: 16px;
-                margin-bottom: 16px;
-            } 
+    height: 50px;
+    background-color: $primary;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    &--list{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 0;
+      top: 50px;
+      background-color: $primary;
+      overflow: hidden;
+      transition: all 0.4s;
+      .list--item {
+        list-style: none;
+        margin-left: 16px;
+        a{
+          display: inline-block;
+          text-decoration: none;
+          color: $white;
+          font-size: 1.6rem;
         }
-        &--logo{
-            margin-left: 16px;
+        .active{
+          color: $black;
         }
-        &--header{
-            font-size: 1.6rem;
-            transition: all 0.4s;
-        }
-        .burger{
-            display: inline-block;
-            cursor: pointer;
-            margin-right: 16px;
-            &--item-one, &--item-two, &--item-three{
-                width: 18px;
-                height: 2px;
-                background-color: $white;
-                margin: 3px 0;
-                transition: 0.4s;
-            }
-        }
-        .change {
-            .burger--item-one {
-                -webkit-transform: rotate(-45deg) translate(-7px, 0px);
-                transform: rotate(-45deg) translate(-7px, 0px);
-            }
-            .burger--item-two {
-                opacity: 0;
-            }
-            .burger--item-three {
-                -webkit-transform: rotate(45deg) translate(-7px, 0px);
-                transform: rotate(45deg) translate(-7px, 0px);
-            }
-        }
+      }
+      .list--item:nth-child(1){
+        margin-top: 16px;
+      }
+      .list--item:nth-child(n+2):nth-child(-n+4){
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
     }
-    .main-content{
-        padding: 16px;
+    &--logo{
+      margin-left: 16px;
     }
-    .footer{
-        display: flex;
-        height: 50px;
-        background-color: $gray-500;
-        color: white;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 16px;
-        img:nth-child(2){
-            margin: 0 8px;
-        }
+    &--header{
+      font-size: 1.6rem;
+      transition: all 0.4s;
     }
+    .burger{
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 16px;
+      &--item-one, &--item-two, &--item-three{
+        width: 18px;
+        height: 2px;
+        background-color: $white;
+        margin: 3px 0;
+        transition: 0.4s;
+      }
+    }
+    .change {
+      .burger--item-one {
+        -webkit-transform: rotate(-45deg) translate(-7px, 0px);
+        transform: rotate(-45deg) translate(-7px, 0px);
+      }
+      .burger--item-two {
+        opacity: 0;
+      }
+      .burger--item-three {
+        -webkit-transform: rotate(45deg) translate(-7px, 0px);
+        transform: rotate(45deg) translate(-7px, 0px);
+      }
+    }
+  }
+  .main-content{
+    padding: 16px;
+  }
+  .footer{
+    display: flex;
+    height: 50px;
+    background-color: $gray-500;
+    color: white;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 16px;
+    img:nth-child(2){
+      margin: 0 8px;
+    }
+  }
 }
 
