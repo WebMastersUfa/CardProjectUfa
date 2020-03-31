@@ -1,17 +1,17 @@
-let isOpen = false;
+let isOpenNavbar = false;
 const navbar = document.getElementById('navbarList');
 const burgerMenu = document.getElementById('burgerButton');
 const navbarHeader = document.getElementById('navbarHeader');
 
 function openNavbar() {
-  if (isOpen) {
+  if (isOpenNavbar) {
     navbar.style.height = '0';
     navbarHeader.style.opacity = '1';
-    isOpen = false;
+    isOpenNavbar = false;
   } else {
     navbar.style.height = '250px';
     navbarHeader.style.opacity = '0';
-    isOpen = true;
+    isOpenNavbar = true;
   }
 }
 

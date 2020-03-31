@@ -1,1 +1,64 @@
 @import '../variables.scss';
+
+.main-content{
+  &--image-card{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  .card-element{
+    h2{
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: normal;
+    }
+    &--item{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 16px;
+      img{
+        width: 22%;
+      }
+      p {
+        font-size: 1.3rem;
+        margin-left: 8px;
+      }
+    }
+  }
+  .card-type{
+    margin-top: 16px;
+    h2{
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: normal;
+    }
+    &--item{
+      .item-title{
+        width: 100%;
+        border: none;
+        text-align: left;
+        background-color: $white;
+        border-top: 2px solid $secondary;
+        border-bottom: 2px solid $secondary;
+        padding: 8px 0 8px 0;
+        font-size: 1.3rem;
+        margin-top: 16px;
+        &:focus{
+          outline: none;
+        }
+      }
+      .item-description{
+        max-height: 0;
+        overflow: hidden;
+        background-color: $gray-200;
+        border-radius: 0 0 8px 8px;
+        transition: max-height 0.6s ease-out;
+        p{
+          padding: 8px 8px 8px 16px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
