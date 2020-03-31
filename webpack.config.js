@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -53,6 +54,12 @@ module.exports = {
       hash: true,
       template: './src/pages/requirements.html',
       filename: './pages/requirements.html'
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'assets/image'),
+        to: path.resolve(__dirname, 'dist/image')
+      }
+    ])
   ]
 };
