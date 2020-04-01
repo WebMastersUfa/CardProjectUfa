@@ -8,3 +8,13 @@ const swiper = new Swiper('.swiper-container', {
         disableOnInteraction: false,
     }
 });
+
+const  swiper1 = new Swiper('.swiper-container-portfolio', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
