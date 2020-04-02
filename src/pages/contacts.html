@@ -7,6 +7,51 @@
     <title>Contacts</title>
   </head>
   <body>
-    <h1 class="hello-contacts">Hello</h1>
+  <div class="wrapper">
+    <nav class="navbar">
+      <a href="../index.html"><img src="../image/logo.svg" class="navbar--logo" alt="logo"></a>
+      <h2 class="navbar--header" id="navbarHeader">Контакты</h2>
+      <div class="burger" id="burgerButton">
+        <div class="burger--item-one"></div>
+        <div class="burger--item-two"></div>
+        <div class="burger--item-three"></div>
+      </div>
+      <ul class="navbar--list" id="navbarList">
+        <li class="list--item"><a href="../index.html">Главная</a></li>
+        <li class="list--item"><a href="./portfolio.html">Портфолио</a></li>
+        <li class="list--item"><a href="./requirements.html">Требования</a></li>
+        <li class="list--item"><a href="./personalization.html">Персонализация</a></li>
+        <li class="list--item"><a href="./contacts.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <div class="main-content--logo-large">
+        <img src="../image/logo-large.svg" alt="logo-large">
+      </div>
+      <div class="main-content--contacts">
+        <div class="contact--item">
+          <img src="../image/mail.svg" alt="mail">
+          <a href="mailto: kartproekt-ufa@mail.ru">kartproekt-ufa@mail.ru</a>
+        </div>
+        <div class="contact--item">
+          <img src="../image/tel.svg" alt="telephone">
+          <a href="tel: 89272361833">+7(927)-236-18-33</a>
+        </div>
+        <div class="contact--item">
+          <img src="../image/geo.svg" alt="geolocation">
+          <span>г. Уфа, ул. Бакалинская 7</span>
+        </div>
+      </div>
+      <div class="main-content--map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.6155664081175!2d55.99178206143135!3d54.716325439831785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93bca2fb30a47%3A0x6f476bdd39156cc9!2z0JHQsNC60LDQu9C40L3RgdC60LDRjyDRg9C7LiwgNywg0KPRhNCwLCDQoNC10YHQvy4g0JHQsNGI0LrQvtGA0YLQvtGB0YLQsNC9LCA0NTAwMjI!5e0!3m2!1sru!2sru!4v1585818606614!5m2!1sru!2sru"  frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </main>
+    <footer class="footer">
+      <img src="../image/wats.svg" alt="wats">
+      <img src="../image/inst.svg" alt="inst">
+      <img src="../image/vk.svg" alt="vk">
+    </footer>
+  </div>
+  <script src="../main.js"></script>
   </body>
 </html>
