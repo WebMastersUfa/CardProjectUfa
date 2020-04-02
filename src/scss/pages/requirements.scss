@@ -1,6 +1,16 @@
 @import '../variables.scss';
 
-.main-content{
+.main-content-requirements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background:
+          linear-gradient($primary, transparent),
+          linear-gradient(to top left, $secondary, transparent),
+          linear-gradient(to top right, $gray-300, transparent);
+  background-blend-mode: screen;
+  padding: 16px;
+  flex: 1 0 auto;
   &--item{
     margin-top: 16px;
     &:nth-child(1){
@@ -12,7 +22,7 @@
       justify-content: flex-end;
       margin-bottom: 16px;
       h2{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: right;
         margin-right: 8px;
       }
