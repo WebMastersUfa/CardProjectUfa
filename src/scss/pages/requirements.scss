@@ -6,8 +6,8 @@
   justify-content: space-around;
   background:
           linear-gradient($primary, transparent),
-          linear-gradient(to top left, $secondary, transparent),
-          linear-gradient(to top right, $gray-300, transparent);
+          linear-gradient(to top left, $gray-200, transparent),
+          linear-gradient(to top right, $gray-200, transparent);
   background-blend-mode: screen;
   padding: 16px;
   flex: 1 0 auto;
