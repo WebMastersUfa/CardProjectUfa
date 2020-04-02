@@ -1,6 +1,7 @@
 @import '../variables.scss';
 
 .header-slider-portfolio{
+  flex: 1 0 auto;
   .swiper-container-portfolio{
     overflow-x: hidden;
     .swiper-wrapper{
