@@ -1,11 +1,7 @@
 @import '../variables.scss';
 
 .header-slider-portfolio{
-  background:
-          linear-gradient($primary, transparent),
-          linear-gradient(to top left, $white, transparent),
-          linear-gradient(to top right, $white, transparent);
-  background-blend-mode: screen;
+  background: $gray-200;
   flex: 1 0 auto;
   .swiper-container-portfolio{
     overflow-x: hidden;
