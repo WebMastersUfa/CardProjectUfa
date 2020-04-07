@@ -9,6 +9,9 @@
   padding: 0;
   font-family: $headings-font-family;
   font-size: 14px;
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
 }
 
 .wrapper{
@@ -16,6 +19,9 @@
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
   .navbar{
     display: flex;
     width: 100%;
@@ -24,6 +30,18 @@
     align-items: center;
     justify-content: space-between;
     color: $white;
+    @media screen and (min-width: 1024px) {
+      height: 100vh;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: sticky;
+      top: 0;
+      width: unset;
+      padding-left: 24px;
+      flex-grow: 1;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
+    }
     &--list{
       display: block;
       position: absolute;
@@ -34,33 +52,75 @@
       background-color: $primary;
       overflow: hidden;
       transition: all 0.4s;
+      @media screen and (min-width: 1024px) {
+        position: unset;
+        width: 100%;
+        height: unset;
+      }
       .list--item {
         list-style: none;
         margin-left: 16px;
+        padding: 8px;
+        transition: all 0.3s ease;
         a{
           display: inline-block;
           text-decoration: none;
           color: $white;
-          font-size: 1.6rem;
+          font-size: 1.2rem;
         }
         .active{
           color: $black;
         }
+        &:hover{
+          background: rgba(29, 154, 134, 0.11);
+          margin-left: 32px;
+        }
       }
       .list--item:nth-child(1){
         margin-top: 16px;
+        @media screen and (min-width: 1024px) {
+          margin-top: 24px;
+        }
       }
       .list--item:nth-child(n+2):nth-child(-n+4){
         margin-top: 16px;
         margin-bottom: 16px;
+        @media screen and (min-width: 1024px) {
+          margin-top: 24px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+    &--footer{
+      display: none;
+      @media screen and (min-width: 1024px) {
+        display: block;
+        margin-top: auto;
+        margin-bottom: 24px;
+      }
+      .footer-social{
+        margin-bottom: 16px;
+        img{
+          width: 40px;
+          height: 40px;
+        }
       }
     }
     &--logo{
       margin-left: 16px;
+      @media screen and (min-width: 1024px) {
+        width: 150px;
+        height: 120px;
+        margin-left: 0;
+        margin-top: 24px;
+      }
     }
     &--header{
       font-size: 1.6rem;
       transition: all 0.4s;
+      @media screen and (min-width: 1024px) {
+        margin-top: 24px;
+      }
     }
     .burger{
       display: inline-block;
@@ -72,6 +132,9 @@
         background-color: $white;
         margin: 3px 0;
         transition: 0.4s;
+      }
+      @media screen and (min-width: 1024px) {
+        display: none;
       }
     }
     .change {
@@ -89,6 +152,9 @@
     }
   }
   .header-slider{
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
     .swiper-container{
       height: 350px;
       text-align: center;
@@ -126,6 +192,9 @@
     background: $gray-200;
     padding: 16px;
     flex: 1 0 auto;
+    @media screen and (min-width: 1024px) {
+      flex-grow: 5;
+    }
     h1{
       text-align: center;
       font-size: 1.7rem;
@@ -151,7 +220,6 @@
         margin-bottom: 0;
       }
     }
-
   }
   .footer{
     display: flex;
@@ -171,6 +239,9 @@
     }
     img:last-child{
       margin-right: 16px;
+    }
+    @media screen and (min-width: 1024px) {
+      display: none;
     }
   }
 }
