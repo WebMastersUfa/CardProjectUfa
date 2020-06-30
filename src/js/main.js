@@ -1,4 +1,4 @@
-let isOpenNavbar = false;
+/* let isOpenNavbar = false;
 const navbar = document.getElementById('navbarList');
 const burgerMenu = document.getElementById('burgerButton');
 const navbarHeader = document.getElementById('navbarHeader');
@@ -18,7 +18,7 @@ function openNavbar() {
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('change');
 });
-burgerMenu.addEventListener('click', openNavbar);
+burgerMenu.addEventListener('click', openNavbar); */
 
 
 

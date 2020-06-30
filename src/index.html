@@ -3,92 +3,232 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <title>UfaCard</title>
   </head>
   <body>
     <div class="wrapper">
       <nav class="navbar">
-        <a href="./index.html"><img src="./image/logo.svg" class="navbar--logo" alt="logo"></a>
-        <h2 class="navbar--header" id="navbarHeader">КартПроектУфа</h2>
-        <div class="burger" id="burgerButton">
-          <div class="burger--item-one"></div>
-          <div class="burger--item-two"></div>
-          <div class="burger--item-three"></div>
-        </div>
-        <ul class="navbar--list" id="navbarList">
-          <li class="list--item active"><a href="./index.html">Главная</a></li>
-          <li class="list--item"><a href="./pages/portfolio.html">Портфолио</a></li>
-          <li class="list--item"><a href="./pages/requirements.html">Требования</a></li>
-          <li class="list--item"><a href="./pages/personalization.html">Персонализация</a></li>
-          <li class="list--item"><a href="./pages/contacts.html">Контакты</a></li>
+        <ul class="navbar__list" id="navbarList">
+          <li class="list__item"><a href="#" class="item__text">Главная</a></li>
+          <li class="list__item"><a href="#" class="item__text">Портфолио</a></li>
+          <li class="list__item"><a href="#" class="item__text">Требования</a></li>
+          <li class="list__item"><a href="#" class="item__text">Персонализация</a></li>
+          <li class="list__item"><a href="#" class="item__text">Контакты</a></li>
         </ul>
-        <div class="navbar--footer">
-          <div class="footer-social">
-            <img src="../image/wats.svg" alt="whatsapp">
-            <img src="../image/inst.svg" alt="instagram">
-            <img src="../image/vk.svg" alt="vk">
-          </div>
-          <p>Created by WebUFA</p>
-        </div>
       </nav>
-      <header class="header-slider">
+      <header class="header">
+        <div class="header__company_block">
+          <img src="./image/logo-header.svg" class="header__logo" alt="header logo">
+          <h2 class="header__slogan">Наши карты - ваш ключ к успеху</h2>
+          <p class="header__text">Качественный продукт <br> Уникальный дизайн</p>
+        </div>
+        <img src="./image/header-image.png" class="header__image" alt="header image">
+      </header>
+      <div class="advantages">
+        <div class="advantages__item">
+          <img src="./image/shield.svg" alt="shield">
+          <span class="item__text">Достойное качество <br> продукции</span>
+        </div>
+        <div class="advantages__item">
+          <img src="./image/speed.svg" alt="speed">
+          <span class="item__text">Быстрые сроки <br> производства</span>
+        </div>
+        <div class="advantages__item">
+          <img src="./image/cost.svg" alt="cost">
+          <span class="item__text">Приемлемый <br> уровень цен</span>
+        </div>
+        <div class="advantages__item">
+          <img src="./image/sale.svg" alt="sale">
+          <span class="item__text">Гибкая система <br> скидок</span>
+        </div>
+      </div>
+      <div class="print">
+        <img src="./image/print-image.png" class="print__image" alt="print">
+        <div class="print__block">
+          <h1 class="print__header">Печать</h1>
+          <h2 class="print_type__header">Карты различного типа</h2>
+          <div class="d-flex">
+            <ul class="print__list">
+              <li>Дисконтные</li>
+              <li>Накопительные</li>
+              <li>Бонусные</li>
+              <li>Экспресс оплаты</li>
+              <li>Страховые</li>
+            </ul>
+            <ul class="print__list">
+              <li>Топливные</li>
+              <li>Прозрачные</li>
+              <li>Смарт-карты</li>
+              <li>Пропуска для сотрудников</li>
+              <li>Электронные ключи</li>
+            </ul>
+          </div>
+          <h2 class="print_type__header">Полиграфическая продукция</h2>
+          <div class="d-flex">
+            <ul class="print__list">
+              <li>Визитки</li>
+              <li>Буклеты</li>
+              <li>Лситовки</li>
+              <li>Календари</li>
+            </ul>
+            <ul class="print__list">
+              <li>Лотерейные карты</li>
+              <li>Подарочные сертификаты</li>
+              <li>Брошюры</li>
+              <li>Приглашения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="our_works">
+        <h1 class="our_works__header">Наши работы</h1>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="blur"></div>
-              <span>Добро пожаловать на сайт компании КартПроектУфа</span>
-              <img src="./image/slide1.jpg" alt="photo">
+              <div class="card">
+                <img src="./image/portfolio1.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
+              <div class="card">
+                <img src="./image/portfolio2.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
+              <div class="card">
+                <img src="./image/portfolio3.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
+              <div class="card">
+                <img src="./image/portfolio4.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <div class="blur"></div>
-              <span>Добро пожаловать на сайт компании КартПроектУфа</span>
-              <img src="./image/slide2.jpg" alt="photo">
-            </div>
-            <div class="swiper-slide">
-              <div class="blur"></div>
-              <span>Добро пожаловать на сайт компании КартПроектУфа</span>
-              <img src="./image/slide1.jpg" alt="photo">
-            </div>
-            <div class="swiper-slide">
-              <div class="blur"></div>
-              <span>Добро пожаловать на сайт компании КартПроектУфа</span>
-              <img src="./image/slide2.jpg" alt="photo">
-            </div>
+              <div class="card">
+                <img src="./image/portfolio5.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
+              <div class="card">
+                <img src="./image/portfolio6.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
+              <div class="card">
+                <img src="./image/portfolio7.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
+              <div class="card">
+                <img src="./image/portfolio8.svg" class="card__image" alt="card">
+                <h3 class="card__header">Название проекта</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna
+                     aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                       ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <img src="./image/our-works1.svg" alt="work">
+                  <img src="./image/our-works2.svg" alt="work">
+                  <img src="./image/our-works3.svg" alt="work">
+                </div>
+              </div>
           </div>
         </div>
-      </header>
-      <main class="main-content">
-        <div class="main-content--image">
+        <div class="swiper-button-next">
+          <img src="./image/next.svg" alt="arrow next">
         </div>
-        <h1>Почему мы?</h1>
-        <div class="main-content--advantages">
-          <img src="./image/shield.svg" alt="logo">
-          <h2>Достойное качество продукции</h2>
+        <div class="swiper-button-prev">
+          <img src="./image/prev.svg" alt="arrow prev">
         </div>
-        <div class="main-content--advantages">
-          <img src="./image/speed.svg" alt="logo">
-          <h2>Быстрые сроки производства</h2>
-        </div>
-        <div class="main-content--advantages">
-          <img src="./image/cost.svg" alt="logo">
-          <h2>Приемлемый уровень цен</h2>
-        </div>
-        <div class="main-content--advantages">
-          <img src="./image/sale.svg" alt="logo">
-          <h2>Гибкая система скидок</h2>
-        </div>
-        <h1>Наши карты - ваш ключ к успеху!</h1>
-      </main>
+      </div>
       <footer class="footer">
-        <p>Created by WebUFA</p>
-        <div>
-          <img src="../image/wats.svg" alt="wats">
-          <img src="../image/inst.svg" alt="inst">
-          <img src="../image/vk.svg" alt="vk">
-        </div>
       </footer>
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

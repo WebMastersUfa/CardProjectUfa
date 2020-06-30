@@ -31,30 +31,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/pages/contacts.html',
-      filename: './pages/contacts.html'
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/pages/personalization.html',
-      filename: './pages/personalization.html'
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/pages/portfolio.html',
-      filename: './pages/portfolio.html'
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/pages/requirements.html',
-      filename: './pages/requirements.html'
-    }),
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, 'assets/image'),
